@@ -1,0 +1,13 @@
+python "import sys";
+python "import os";
+python "print sys.argv";
+python "sys.path.append(os.path.dirname(sys.argv[-3]))";
+python "import exportCurves";//
+python "reload(exportCurves)";
+
+python "exportCurves.RunExport(sys.argv[-2],publishPath = sys.argv[-1])";
+
+//python "print sys.argv";
+
+
+
